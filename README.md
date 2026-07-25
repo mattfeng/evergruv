@@ -14,9 +14,9 @@ A color theme based on [@sainnhe](https://github.com/sainnhe)'s excellent [Everf
 
 ## Theme Applications
 
-| What          | Where |
-| :------------ | :---- |
-| VS Code Theme | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=georglauterbach.evergruv) & [Open VSX Registry](https://open-vsx.org/extension/georglauterbach/evergruv) |
-| System Theme  | [`github.com/georglauterbach/desktop`](https://github.com/georglauterbach/desktop#theme) |
-| Wallpapers    | [`github.com/georglauterbach/desktop/home/.config/sway/theme/`](https://github.com/georglauterbach/desktop/tree/main/home/.config/sway/theme) |
-| CLI tools     | [`github.com/georglauterbach/hermes/data/home/.config`](https://github.com/georglauterbach/hermes/tree/main/data/home/.config) |
+1. Editor Theme
+    1. VS Code ([Microsoft Marketplace](https://marketplace.visualstudio.com/items?itemName=georglauterbach.evergruv))
+    2. VS Codium ([Open VSX Registry](https://open-vsx.org/extension/georglauterbach/evergruv))
+2. [GTK Theme](https://github.com/georglauterbach/desktop#theme)
+3. [Wallpapers](https://github.com/georglauterbach/desktop/tree/main/data/home/.config/sway/theme)
+4. [CLI Tools](https://github.com/georglauterbach/hermes/tree/main/data/home/.config)
