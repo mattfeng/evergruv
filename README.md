@@ -19,5 +19,4 @@ A color theme based on [@sainnhe](https://github.com/sainnhe)'s excellent [Everf
 | VS Code Theme | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=georglauterbach.evergruv) & [Open VSX Registry](https://open-vsx.org/extension/georglauterbach/evergruv) |
 | System Theme  | [`github.com/georglauterbach/desktop`](https://github.com/georglauterbach/desktop#theme) |
 | Wallpapers    | [`github.com/georglauterbach/desktop/home/.config/sway/theme/`](https://github.com/georglauterbach/desktop/tree/main/home/.config/sway/theme) |
-| `btop` Theme  | [`github.com/georglauterbach/hermes/data/config/btop/themes/`](https://github.com/georglauterbach/hermes/tree/main/data/config/btop/themes) |
-| `bat` Theme   | [`github.com/georglauterbach/hermes/data/config/bat/themes/`](https://github.com/georglauterbach/hermes/tree/main/data/config/bat/themes) |
+| CLI tools     | [`github.com/georglauterbach/hermes/data/config`](https://github.com/georglauterbach/hermes/tree/main/data/config) |
