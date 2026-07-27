@@ -536,7 +536,7 @@
     },
     {
       "name": "function",
-      "scope": "entity.name.function,support.function,meta.function-call",
+      "scope": "entity.name.function,support.function,meta.function-call.generic.python",
       "settings": {
         "foreground": "#A9B665"
       }
