@@ -1,21 +1,21 @@
 {
-  "name": "evergruv",
-  "displayName": "Evergruv",
+  "name": "evergruv-custom",
+  "displayName": "Evergruv Custom",
   "version": "0.5.6",
   "description": "A color theme based on @sainnhe's excellent Everforest Light & Gruvbox Material Dark",
-  "author": "georglauterbach (https://github.com/georglauterbach)",
-  "publisher": "georglauterbach",
+  "author": "mattfeng (https://github.com/mattfeng)",
+  "publisher": "mattfeng",
   "sponsor": {
-    "url": "https://github.com/sponsors/georglauterbach"
+    "url": "https://github.com/sponsors/mattfeng"
   },
   "pricing": "Free",
-  "homepage": "https://github.com/georglauterbach/evergruv",
+  "homepage": "https://github.com/mattfeng/evergruv",
   "repository": {
     "type": "git",
-    "url": "https://github.com/georglauterbach/evergruv.git"
+    "url": "https://github.com/mattfeng/evergruv.git"
   },
   "bugs": {
-    "url": "https://github.com/georglauterbach/evergruv/issues"
+    "url": "https://github.com/mattfeng/evergruv/issues"
   },
   "license": "MIT",
   "icon": "assets/icon.png",

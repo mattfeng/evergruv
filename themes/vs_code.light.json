@@ -63,6 +63,10 @@
     "table": "#35A77C",
     "typeAlias": "#3A94C5",
     // * -- language-specific token types
+    // Python
+    "number:python": "#DF69BA",
+    "boolean:python": "#F85552",
+    "selfParameter:python": "#35A77C",
     // Rust
     "derive:rust": "#DF69BA",
     "deriveHelper:rust": "#5C6A72",
@@ -587,6 +591,27 @@
         "foreground": "#5C6A72"
       }
     },
+    {
+      "name": "Python | Number",
+      "scope": "source.python constant.numeric",
+      "settings": {
+        "foreground": "#DF69BA"
+      }
+    },
+    {
+      "name": "Python | Language Constant",
+      "scope": "constant.language.python",
+      "settings": {
+        "foreground": "#F85552"
+      }
+    },
+    {
+      "name": "Python | self",
+      "scope": "variable.language.special.self.python,variable.parameter.function.language.special.self.python",
+      "settings": {
+        "foreground": "#35A77C"
+      }
+    },
     // * -- generic token types
     {
       "name": "Text",
@@ -796,6 +821,97 @@
         "foreground": "#5C6A72"
       }
     },
+    // MDX
+    {
+      "name": "MDX | Component",
+      "scope": "entity.name.function.mdx,entity.name.tag.mdx",
+      "settings": {
+        "foreground": "#8DA101"
+      }
+    },
+    {
+      "name": "MDX | Attribute",
+      "scope": "entity.other.attribute-name.mdx",
+      "settings": {
+        "foreground": "#3A94C5"
+      }
+    },
+    {
+      "name": "MDX | Tag Punctuation",
+      "scope": "punctuation.definition.tag.begin.mdx,punctuation.definition.tag.end.mdx,punctuation.definition.tag.mdx",
+      "settings": {
+        "foreground": "#5C6A72A0"
+      }
+    },
+    {
+      "name": "MDX | Expression Punctuation",
+      "scope": "punctuation.section.embedded.begin.mdx,punctuation.section.embedded.end.mdx",
+      "settings": {
+        "foreground": "#F57D26"
+      }
+    },
+    {
+      "name": "MDX | YAML Frontmatter Boolean",
+      "scope": "meta.embedded.yaml constant.language.boolean.yaml",
+      "settings": {
+        "foreground": "#F85552"
+      }
+    },
+    {
+      "name": "MDX | YAML Frontmatter Number",
+      "scope": "meta.embedded.yaml constant.numeric",
+      "settings": {
+        "foreground": "#DF69BA"
+      }
+    },
+    {
+      "name": "MDX | Heading 1",
+      "scope": "markup.heading.atx.1.mdx",
+      "settings": {
+        "foreground": "#F85552",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 2",
+      "scope": "markup.heading.atx.2.mdx",
+      "settings": {
+        "foreground": "#F57D26",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 3",
+      "scope": "markup.heading.atx.3.mdx",
+      "settings": {
+        "foreground": "#D69A00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 4",
+      "scope": "markup.heading.atx.4.mdx",
+      "settings": {
+        "foreground": "#8DA101",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 5",
+      "scope": "markup.heading.atx.5.mdx",
+      "settings": {
+        "foreground": "#3A94C5",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 6",
+      "scope": "markup.heading.atx.6.mdx",
+      "settings": {
+        "foreground": "#DF69BA",
+        "fontStyle": "bold"
+      }
+    },
     // Markdown
     {
       "name": "Markdown | Code Fence",
@@ -806,7 +922,7 @@
     },
     {
       "name": "Markdown | Heading 1",
-      "scope": "heading.1.markdown,markup.heading.setext.1.markdown",
+      "scope": "heading.1.markdown entity.name.section.markdown,markup.heading.setext.1.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#F85552",
         "fontStyle": "bold"
@@ -814,7 +930,7 @@
     },
     {
       "name": "Markdown | Heading 2",
-      "scope": "heading.2.markdown,markup.heading.setext.2.markdown",
+      "scope": "heading.2.markdown entity.name.section.markdown,markup.heading.setext.2.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#F57D26",
         "fontStyle": "bold"
@@ -822,7 +938,7 @@
     },
     {
       "name": "Markdown | Heading 3",
-      "scope": "heading.3.markdown",
+      "scope": "heading.3.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#D69A00",
         "fontStyle": "bold"
@@ -830,7 +946,7 @@
     },
     {
       "name": "Markdown | Heading 4",
-      "scope": "heading.4.markdown",
+      "scope": "heading.4.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#8DA101",
         "fontStyle": "bold"
@@ -838,7 +954,7 @@
     },
     {
       "name": "Markdown | Heading 5",
-      "scope": "heading.5.markdown",
+      "scope": "heading.5.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#3A94C5",
         "fontStyle": "bold"
@@ -846,7 +962,7 @@
     },
     {
       "name": "Markdown | Heading 6",
-      "scope": "heading.6.markdown",
+      "scope": "heading.6.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#DF69BA",
         "fontStyle": "bold"

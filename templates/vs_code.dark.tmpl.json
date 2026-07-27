@@ -63,6 +63,10 @@
     "table": "#{{CYAN}}",
     "typeAlias": "#{{BLUE}}",
     // * -- language-specific token types
+    // Python
+    "number:python": "#{{PURPLE}}",
+    "boolean:python": "#{{RED}}",
+    "selfParameter:python": "#{{CYAN}}",
     // Rust
     "derive:rust": "#{{PURPLE}}",
     "deriveHelper:rust": "#{{FG}}",
@@ -587,6 +591,27 @@
         "foreground": "#{{FG}}"
       }
     },
+    {
+      "name": "Python | Number",
+      "scope": "source.python constant.numeric",
+      "settings": {
+        "foreground": "#{{PURPLE}}"
+      }
+    },
+    {
+      "name": "Python | Language Constant",
+      "scope": "constant.language.python",
+      "settings": {
+        "foreground": "#{{RED}}"
+      }
+    },
+    {
+      "name": "Python | self",
+      "scope": "variable.language.special.self.python,variable.parameter.function.language.special.self.python",
+      "settings": {
+        "foreground": "#{{CYAN}}"
+      }
+    },
     // * -- generic token types
     {
       "name": "Text",
@@ -796,6 +821,97 @@
         "foreground": "#{{FG}}"
       }
     },
+    // MDX
+    {
+      "name": "MDX | Component",
+      "scope": "entity.name.function.mdx,entity.name.tag.mdx",
+      "settings": {
+        "foreground": "#{{GREEN}}"
+      }
+    },
+    {
+      "name": "MDX | Attribute",
+      "scope": "entity.other.attribute-name.mdx",
+      "settings": {
+        "foreground": "#{{BLUE}}"
+      }
+    },
+    {
+      "name": "MDX | Tag Punctuation",
+      "scope": "punctuation.definition.tag.begin.mdx,punctuation.definition.tag.end.mdx,punctuation.definition.tag.mdx",
+      "settings": {
+        "foreground": "#{{FG}}{{T_5}}"
+      }
+    },
+    {
+      "name": "MDX | Expression Punctuation",
+      "scope": "punctuation.section.embedded.begin.mdx,punctuation.section.embedded.end.mdx",
+      "settings": {
+        "foreground": "#{{ORANGE}}"
+      }
+    },
+    {
+      "name": "MDX | YAML Frontmatter Boolean",
+      "scope": "meta.embedded.yaml constant.language.boolean.yaml",
+      "settings": {
+        "foreground": "#{{RED}}"
+      }
+    },
+    {
+      "name": "MDX | YAML Frontmatter Number",
+      "scope": "meta.embedded.yaml constant.numeric",
+      "settings": {
+        "foreground": "#{{PURPLE}}"
+      }
+    },
+    {
+      "name": "MDX | Heading 1",
+      "scope": "markup.heading.atx.1.mdx",
+      "settings": {
+        "foreground": "#{{RED}}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 2",
+      "scope": "markup.heading.atx.2.mdx",
+      "settings": {
+        "foreground": "#{{ORANGE}}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 3",
+      "scope": "markup.heading.atx.3.mdx",
+      "settings": {
+        "foreground": "#{{YELLOW}}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 4",
+      "scope": "markup.heading.atx.4.mdx",
+      "settings": {
+        "foreground": "#{{GREEN}}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 5",
+      "scope": "markup.heading.atx.5.mdx",
+      "settings": {
+        "foreground": "#{{BLUE}}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MDX | Heading 6",
+      "scope": "markup.heading.atx.6.mdx",
+      "settings": {
+        "foreground": "#{{PURPLE}}",
+        "fontStyle": "bold"
+      }
+    },
     // Markdown
     {
       "name": "Markdown | Code Fence",
@@ -806,7 +922,7 @@
     },
     {
       "name": "Markdown | Heading 1",
-      "scope": "heading.1.markdown,markup.heading.setext.1.markdown",
+      "scope": "heading.1.markdown entity.name.section.markdown,markup.heading.setext.1.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#{{RED}}",
         "fontStyle": "bold"
@@ -814,7 +930,7 @@
     },
     {
       "name": "Markdown | Heading 2",
-      "scope": "heading.2.markdown,markup.heading.setext.2.markdown",
+      "scope": "heading.2.markdown entity.name.section.markdown,markup.heading.setext.2.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#{{ORANGE}}",
         "fontStyle": "bold"
@@ -822,7 +938,7 @@
     },
     {
       "name": "Markdown | Heading 3",
-      "scope": "heading.3.markdown",
+      "scope": "heading.3.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#{{YELLOW}}",
         "fontStyle": "bold"
@@ -830,7 +946,7 @@
     },
     {
       "name": "Markdown | Heading 4",
-      "scope": "heading.4.markdown",
+      "scope": "heading.4.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#{{GREEN}}",
         "fontStyle": "bold"
@@ -838,7 +954,7 @@
     },
     {
       "name": "Markdown | Heading 5",
-      "scope": "heading.5.markdown",
+      "scope": "heading.5.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#{{BLUE}}",
         "fontStyle": "bold"
@@ -846,7 +962,7 @@
     },
     {
       "name": "Markdown | Heading 6",
-      "scope": "heading.6.markdown",
+      "scope": "heading.6.markdown entity.name.section.markdown",
       "settings": {
         "foreground": "#{{PURPLE}}",
         "fontStyle": "bold"
