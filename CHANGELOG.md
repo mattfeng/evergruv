@@ -8,6 +8,9 @@ All notable changes to this project will be documented in this file. The format 
 >
 > Changes listed in this section have not been published yet!
 
+- **Fixed**
+  - properly highlight HTML syntax in MDX files
+
 ## [0.5.6](https://github.com/georglauterbach/evergruv/releases/tag/0.5.6)
 
 - **Changed**

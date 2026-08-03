@@ -824,28 +824,28 @@
     // MDX
     {
       "name": "MDX | Component",
-      "scope": "entity.name.function.mdx,entity.name.tag.mdx",
+      "scope": "entity.name.function.mdx,entity.name.tag.mdx,source.mdx entity.name.tag.jsx,source.mdx entity.name.tag.namespace.jsx,source.mdx entity.name.tag.local.jsx,source.mdx support.class.component.jsx",
       "settings": {
         "foreground": "#{{GREEN}}"
       }
     },
     {
       "name": "MDX | Attribute",
-      "scope": "entity.other.attribute-name.mdx",
+      "scope": "entity.other.attribute-name.mdx,source.mdx entity.other.attribute-name.tsx,source.mdx entity.other.attribute-name.namespace.tsx",
       "settings": {
         "foreground": "#{{BLUE}}"
       }
     },
     {
       "name": "MDX | Tag Punctuation",
-      "scope": "punctuation.definition.tag.begin.mdx,punctuation.definition.tag.end.mdx,punctuation.definition.tag.mdx",
+      "scope": "punctuation.definition.tag.begin.mdx,punctuation.definition.tag.end.mdx,punctuation.definition.tag.mdx,source.mdx punctuation.definition.tag.begin.jsx,source.mdx punctuation.definition.tag.end.jsx,source.mdx punctuation.definition.tag.closing.jsx,source.mdx punctuation.definition.tag.self-closing.jsx",
       "settings": {
         "foreground": "#{{FG}}{{T_5}}"
       }
     },
     {
       "name": "MDX | Expression Punctuation",
-      "scope": "punctuation.section.embedded.begin.mdx,punctuation.section.embedded.end.mdx",
+      "scope": "punctuation.section.embedded.begin.mdx,punctuation.section.embedded.end.mdx,string.other.begin.expression.mdx.js,string.other.end.expression.mdx.js,source.mdx punctuation.section.embedded.begin.tsx,source.mdx punctuation.section.embedded.end.tsx",
       "settings": {
         "foreground": "#{{ORANGE}}"
       }
