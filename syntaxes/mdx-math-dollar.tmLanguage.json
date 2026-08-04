@@ -1,0 +1,13 @@
+{
+  "name": "MDX KaTeX Dollar Delimiters",
+  "scopeName": "mdx.math.dollar.evergruv",
+  "injectionSelector": "L:source.mdx - (comment, string, markup.raw, markup.fenced_code.block, meta.embedded)",
+  "patterns": [
+    {
+      "include": "markdown.math.block"
+    },
+    {
+      "include": "markdown.math.inline"
+    }
+  ]
+}

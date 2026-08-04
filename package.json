@@ -21,6 +21,7 @@
   "icon": "assets/icon.png",
   "files": [
     "assets/icon.png",
+    "syntaxes",
     "themes",
     "LICENSE"
   ],
@@ -35,6 +36,29 @@
         "label": "Evergruv (Gruvbox Material) Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/vs_code.dark.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "markdown.math.bracket.evergruv",
+        "path": "./syntaxes/markdown-math-bracket.tmLanguage.json",
+        "injectTo": [
+          "text.html.markdown",
+          "source.mdx"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.math.markdown": "latex"
+        }
+      },
+      {
+        "scopeName": "mdx.math.dollar.evergruv",
+        "path": "./syntaxes/mdx-math-dollar.tmLanguage.json",
+        "injectTo": [
+          "source.mdx"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.math.markdown": "latex"
+        }
       }
     ]
   },

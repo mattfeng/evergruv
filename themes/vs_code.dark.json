@@ -679,9 +679,51 @@
     },
     {
       "name": "Markup | Inline Raw Strings",
-      "scope": "markup.inline.raw.string,markup.raw.monospace",
+      "scope": "markup.inline.raw.string,markup.raw.monospace,markup.inline.raw.code.mdx,markup.raw.code.mdx",
       "settings": {
         "foreground": "#A9B665"
+      }
+    },
+    {
+      "name": "Markup | Inline Code Punctuation",
+      "scope": "string.other.begin.code.mdx,string.other.end.code.mdx",
+      "settings": {
+        "foreground": "#D3869B"
+      }
+    },
+    {
+      "name": "Markup | KaTeX",
+      "scope": "meta.embedded.math.markdown,markup.raw.math.mdx,markup.inline.raw.math.mdx,markup.raw.math.flow.mdx",
+      "settings": {
+        "foreground": "#89B482"
+      }
+    },
+    {
+      "name": "Markup | KaTeX Delimiter",
+      "scope": "punctuation.definition.math.begin.markdown,punctuation.definition.math.end.markdown,string.other.begin.math.mdx,string.other.end.math.mdx,string.other.begin.math.flow.mdx,string.other.end.math.flow.mdx",
+      "settings": {
+        "foreground": "#D3869B"
+      }
+    },
+    {
+      "name": "Markup | KaTeX Command",
+      "scope": "entity.name.function.math.tex,constant.character.math.tex,constant.other.general.math.tex",
+      "settings": {
+        "foreground": "#A9B665"
+      }
+    },
+    {
+      "name": "Markup | KaTeX Number",
+      "scope": "constant.numeric.math.tex",
+      "settings": {
+        "foreground": "#D3869B"
+      }
+    },
+    {
+      "name": "Markup | KaTeX Operator",
+      "scope": "punctuation.math.operator.latex",
+      "settings": {
+        "foreground": "#E78A4E"
       }
     },
     // * -- languages
@@ -819,6 +861,13 @@
       "scope": "support.type.property-name",
       "settings": {
         "foreground": "#DDC7A1"
+      }
+    },
+    {
+      "name": "JSON | Language Constant",
+      "scope": "constant.language.json",
+      "settings": {
+        "foreground": "#EA6962"
       }
     },
     // MDX
@@ -1011,6 +1060,13 @@
       "settings": {
         "foreground": "#E78A4E",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "YAML | Number",
+      "scope": "source.yaml constant.numeric",
+      "settings": {
+        "foreground": "#D3869B"
       }
     }
   ]

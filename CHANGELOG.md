@@ -8,8 +8,14 @@ All notable changes to this project will be documented in this file. The format 
 >
 > Changes listed in this section have not been published yet!
 
+- **Added**
+  - added a `justfile` for local extension builds
 - **Fixed**
   - properly highlight HTML syntax in MDX files
+  - distinguish booleans from plain text in JSON files
+  - distinguish numbers from plain text in YAML files
+  - properly highlight KaTeX in Markdown and MDX files with dollar or bracket delimiters
+  - distinguish inline code from plain text in Markdown and MDX files
 
 ## [0.5.6](https://github.com/georglauterbach/evergruv/releases/tag/0.5.6)
 

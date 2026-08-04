@@ -1,0 +1,49 @@
+{
+  "name": "Markdown KaTeX Bracket Delimiters",
+  "scopeName": "markdown.math.bracket.evergruv",
+  "injectionSelector": "L:text.html.markdown - (comment, string, markup.raw, markup.fenced_code.block, meta.embedded), L:source.mdx - (comment, string, markup.raw, markup.fenced_code.block, meta.embedded)",
+  "patterns": [
+    {
+      "name": "markup.math.block.markdown",
+      "contentName": "meta.embedded.math.markdown",
+      "begin": "(?<!\\x5C)(\\x5C\\[)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.math.begin.markdown"
+        }
+      },
+      "end": "(\\x5C\\])",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.math.end.markdown"
+        }
+      },
+      "patterns": [
+        {
+          "include": "text.html.markdown.math#math"
+        }
+      ]
+    },
+    {
+      "name": "markup.math.inline.markdown",
+      "contentName": "meta.embedded.math.markdown",
+      "begin": "(?<!\\x5C)(\\x5C\\()",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.math.begin.markdown"
+        }
+      },
+      "end": "(\\x5C\\))",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.math.end.markdown"
+        }
+      },
+      "patterns": [
+        {
+          "include": "text.html.markdown.math#math"
+        }
+      ]
+    }
+  ]
+}
